@@ -7,7 +7,7 @@ library(dplyr)
 # 1. Merge the training and the test sets to create one data set.
 colnames <- read.table("./data/features.txt")
 colnames <- colnames[ , "V2"]
-# read in the data
+# read in the "raw" data set
 traindatasetx <- read.table("./data/train/x_train.txt", col.names=colnames)
 testdatasetx <- read.table("./data/test/x_test.txt", col.names=colnames)
 traindatasety <- read.table("./data/train/y_train.txt", col.names=c("activity"))
@@ -53,11 +53,11 @@ for( subj in 1:30) {
       vec <- as.vector(sapply(selected[,3:68], mean))
       # create a data vector for the row data
       vec <- c(subj, act, vec)
-      # added the row to the data frame
+      # add the row to the data frame
       tidydata <- rbind( tidydata, vec)
    }
 }
-# set the column names
+# set the column names. Add _avg to the data column names
 cnames <- paste(names(extracted_data), "_avg", sep="")
 # update subject and activity column names
 cnames[1:2] <- c("subject", "activity")
