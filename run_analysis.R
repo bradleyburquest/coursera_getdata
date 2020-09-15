@@ -64,5 +64,5 @@ cnames[1:2] <- c("subject", "activity")
 colnames(tidydata) <- cnames
 
 # Write out the tidy data file
-write.csv(tidydata, "tidydata.csv", row.names=FALSE)
+write.table(tidydata, "tidydata.txt", row.names=FALSE)
 
