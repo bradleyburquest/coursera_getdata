@@ -8,10 +8,11 @@ SITTING, STANDING, and LAYING). For details on the "raw" data files used, see th
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-### Data Transformations (from the original "raw" data CodeBook)
-
 The original CookBooks (or data descrpitions) for the "raw" data can be found in the data directory. 
 The files features.txt, features_info.txt, and activity_labels.txt contain additional information on the "raw" dataset used for this project. 
+
+
+### Data Transformations (from the original "raw" data CodeBook)
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
