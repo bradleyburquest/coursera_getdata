@@ -19,7 +19,7 @@ The goal is to prepare tidy data that can be used for later analysis.
 
 * run_analysis.R  - main script to process the "raw" data and create the required cleaned data. (see below)
 * extracted_data.csv  -  required extracted data file produced by the run_analysis.R script
-* tidydata.csv  - required tidy data file produced by the run_analysis.R script
+* tidydata.txt  - required tidy data file produced by the run_analysis.R script
 * README.md - This file
 * CodeBook.md - Describes the variables, the data, and any transformations or work that you performed to clean up the data
 * data directory - contains the "raw" data files for this project
